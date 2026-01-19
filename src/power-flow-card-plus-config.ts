@@ -63,6 +63,7 @@ interface Solar extends BaseConfigEntity {
   secondary_info?: SecondaryInfoType;
   display_zero?: boolean;
   display_zero_state?: boolean;
+  solar_only_to_battery?: boolean;
 }
 
 interface Home extends BaseConfigEntity {

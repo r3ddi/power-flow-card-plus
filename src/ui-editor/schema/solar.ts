@@ -41,6 +41,11 @@ const mainSchema = {
       label: "Use Metadata",
       selector: { boolean: {} },
     },
+    {
+      name: "solar_only_to_battery",
+      label: "Solar Only To Battery",
+      selector: { boolean: {} },
+    },
   ],
 };
 

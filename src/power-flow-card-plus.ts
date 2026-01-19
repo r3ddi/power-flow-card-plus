@@ -395,6 +395,15 @@ export class PowerFlowCardPlus extends LitElement {
 
     if (solar.has && grid.state.toGrid) solar.state.toGrid = grid.state.toGrid - (battery.state.toGrid ?? 0);
 
+    // Handle solar_only_to_battery mode: suppress direct Solar -> Home flow
+    if (entities.solar?.solar_only_to_battery && solar.has && battery.has) {
+      if (solar.state.toHome && solar.state.toHome > 0) {
+        // Redirect solar energy that would go to home into battery instead
+        solar.state.toBattery = (solar.state.toBattery ?? 0) + solar.state.toHome;
+        solar.state.toHome = 0;
+      }
+    }
+
     // Handle Power Outage
     if (grid.powerOutage.isOutage) {
       grid.state.fromGrid = grid.powerOutage.entityGenerator ? Math.max(getEntityStateWatts(this.hass, grid.powerOutage.entityGenerator), 0) : 0;

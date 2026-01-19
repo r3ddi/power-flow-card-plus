@@ -75,6 +75,7 @@
     "grey_color": "Grå farve",
     "tap_action": "Tap Handling",
     "navigation_path": "Navigationssti",
-    "sort_individual_devices": "Sorter individuelle enheder"
+    "sort_individual_devices": "Sorter individuelle enheder",
+    "solar_only_to_battery": "Sol kun til batteri"
   }
 }

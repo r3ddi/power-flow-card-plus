@@ -75,6 +75,7 @@
     "grey_color": "Cor do Cinza",
     "tap_action": "Ação de Toque",
     "navigation_path": "Caminho de Navegação",
-    "sort_individual_devices": "Classifique dispositivos individuais"
+    "sort_individual_devices": "Classifique dispositivos individuais",
+    "solar_only_to_battery": "Solar apenas para bateria"
   }
 }

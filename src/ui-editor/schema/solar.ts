@@ -43,7 +43,7 @@ const mainSchema = {
     },
     {
       name: "solar_only_to_battery",
-      label: "Solar Only To Battery",
+      label: localize("editor.solar_only_to_battery"),
       selector: { boolean: {} },
     },
   ],

@@ -75,6 +75,7 @@
     "grey_color": "Colore Sfumato",
     "tap_action": "Azione al tocco",
     "navigation_path": "Percorso di navigazione",
-    "sort_individual_devices": "Ordina i singoli individuale"
+    "sort_individual_devices": "Ordina i singoli individuale",
+    "solar_only_to_battery": "Solare solo a batteria"
   }
 }

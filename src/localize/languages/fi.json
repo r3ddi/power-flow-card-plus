@@ -75,6 +75,7 @@
     "grey_color": "Harmaa väri",
     "tap_action": "Napauta toimintoa",
     "navigation_path": "Navigointipolku",
-    "sort_individual_devices": "Lajittele yksittäiset laitteet"
+    "sort_individual_devices": "Lajittele yksittäiset laitteet",
+    "solar_only_to_battery": "Aurinko vain akkuun"
   }
 }

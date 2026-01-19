@@ -75,6 +75,7 @@
     "grey_color": "Колір затемнення",
     "tap_action": "Дія при натисканні",
     "navigation_path": "Шлях переходу",
-    "sort_individual_devices": "Сортувати окремі пристрої"
+    "sort_individual_devices": "Сортувати окремі пристрої",
+    "solar_only_to_battery": "Сонячна лише в акумулятор"
   }
 }

@@ -8,6 +8,9 @@ import { checkHasBottomIndividual, checkHasRightIndividual } from "@/utils/compu
 import { checkShouldShowDots } from "@/utils/checkShouldShowDots";
 
 export const flowSolarToHome = (config: PowerFlowCardPlusConfig, { battery, grid, individual, solar, newDur }: Flows) => {
+  // Hide line completely when solar_only_to_battery is enabled
+  if (config.entities.solar?.solar_only_to_battery) return "";
+
   return solar.has && showLine(config, solar.state.toHome || 0) && !config.entities.home?.hide
     ? html`<div
         class="lines ${classMap({
